@@ -53,12 +53,8 @@ public class AuthFilter extends HttpFilter implements Filter {
 				HttpSession session = httpRequest.getSession();
 				if(session.getAttribute("AuthenticationPrincipal") == null) {	// Attirube() 서버 저장소 set, get으로 사용
 					httpResponse.sendRedirect("/login.html");
-					return;
-					
-				} else { 
-					
-				}
-				
+					return;					
+				}				
 			}
 		}
 		

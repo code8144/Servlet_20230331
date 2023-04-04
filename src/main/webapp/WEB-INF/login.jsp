@@ -6,10 +6,10 @@
 	//선언문(클래스 안, 클래스 정의, 함수 정의)
 %>    
 <%
-	//스크립틀릿(메소드 안)
-	String wc = (String)request.getAttribute("welcome");
-	out.println(wc);
-	int[] numbers = (int[] request.getAttribute("numbers"));
+//스크립틀릿, 이태그를 열면 자바 소스코드를 활용할수 있다(소스코드안)
+   String wc = (String)request.getAttribute("welcome");
+   out.println(wc);
+   int[] numbers = (int[]) request.getAttribute("numbers");   
 %>    
     
 <!DOCTYPE html>
